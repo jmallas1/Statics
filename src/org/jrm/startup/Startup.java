@@ -4,8 +4,17 @@ import org.jrm.person.Person;
 
 import java.util.ArrayList;
 
+/**
+ * Class model for Startup class
+ * @author Jared Mallas
+ * @version 1.0
+ */
 public class Startup
 {
+    /**
+     * Generate a list of people to be used for class examples
+     * @return ArrayList of "people" objects
+     */
     public static ArrayList<Person> genListOfPeople()
     {
         Person somePerson;

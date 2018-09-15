@@ -17,9 +17,30 @@ public class Person implements Weighable
     private static Person lastPerson = null;
     private double weight;
 
+    /**
+     * Static method to get the total number of people that have been
+     * instantiated while this JVM is running
+     * @return Integer of the total number of instantiated people
+     */
     public static Integer getTotalPeople() { return totalPeople; }
+
+    /**
+     * Static method to set the number of "total people." Generally
+     * ill-advised, but nice when you want to reset the counter
+     * @param i what you want the count to be
+     */
     public static void setTotalPeople(int i) { totalPeople = i; }
+
+    /**
+     * Static method to return the first "Person" instantiated withing this JVM
+     * @return The first instantiated person
+     */
     public static Person getFirstPerson() { return firstPerson; }
+
+    /**
+     * Static method to return the last instantiated "person" within this JVM
+     * @return the last instantiated person.
+     */
     public static Person getLastPerson() { return lastPerson; }
 
     /**
@@ -138,12 +159,20 @@ public class Person implements Weighable
         this.weight = weight;
     }
 
+    /**
+     * Implementation of addWeight method enforced by weighable interface
+     * @param pounds Adds to Person.weight
+     */
     @Override
     public void addWeight(Double pounds)
     {
         this.setWeight(this.getWeight() + pounds);
     }
 
+    /**
+     * Implementation of loseWeight method enforced by weighable interface
+     * @param pounds Subtracts from Person.weight
+     */
     @Override
     public void loseWeight(Double pounds)
     {
