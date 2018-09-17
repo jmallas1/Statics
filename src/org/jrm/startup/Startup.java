@@ -17,24 +17,31 @@ public class Startup
      */
     public static ArrayList<Person> genListOfPeople()
     {
-        Person somePerson;
         Integer counter = 0;
 
         ArrayList<Person> rList = new ArrayList<Person>();
 
-        somePerson = new Person("Jared", "Mallas", 42);
-        counter = Person.getTotalPeople();
-        rList.add(somePerson);
-
-        somePerson = new Person("Laura", "Mallas", 45);
-        counter = Person.getTotalPeople();
-        rList.add(somePerson);
-
-        somePerson = new Person("Romanie", "Mallas", 5);
-        counter = Person.getTotalPeople();
-        rList.add(somePerson);
+        rList.add(genPerson("Jared", "Mallas", 42));
+        rList.add(genPerson("Laura", "Mallas", 45));
+        rList.add(genPerson("Romanie", "Mallas", 5));
 
         return rList;
+    }
+
+    public static Person[] genArrayOfPeople()
+    {
+        Person[] rArray = new Person[3];
+
+        rArray[0] = genPerson("Jared", "Mallas", 42);
+        rArray[1] = genPerson("Laura", "Mallas", 45);
+        rArray[2] = genPerson("Romanie", "Mallas", 5);
+
+        return rArray;
+    }
+
+    private static Person genPerson(String fName, String lName, Integer age)
+    {
+        return new Person(fName, lName, age);
     }
 
 }
