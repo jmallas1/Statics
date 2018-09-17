@@ -28,6 +28,10 @@ public class Startup
         return rList;
     }
 
+    /**
+     * Generate an array of people to be used for class examples
+     * @return array populated with people
+     */
     public static Person[] genArrayOfPeople()
     {
         Person[] rArray = new Person[3];
@@ -39,6 +43,13 @@ public class Startup
         return rArray;
     }
 
+    /**
+     * Private method to generate "a person." Im unclear why this had to be static...
+     * @param fName First name of person
+     * @param lName Last name of person
+     * @param age Age of person
+     * @return a person
+     */
     private static Person genPerson(String fName, String lName, Integer age)
     {
         return new Person(fName, lName, age);

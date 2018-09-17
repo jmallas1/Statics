@@ -5,8 +5,17 @@ import org.jrm.startup.Startup;
 
 import java.util.ArrayList;
 
+/**
+ * Main class for demoing statics
+ * @author Jared Mallas
+ * @version 1.0
+ */
 public class Main {
 
+    /**
+     * Main method
+     * @param args arguments for main if necessary
+     */
     public static void main(String[] args)
     {
         ArrayList<Person> someList = Startup.genListOfPeople();
