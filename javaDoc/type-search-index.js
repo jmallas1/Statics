@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"org.jrm","l":"Main"},{"p":"org.jrm.person","l":"Person"},{"p":"org.jrm.startup","l":"Startup"},{"p":"org.jrm.interfaces","l":"Weighable"}]
